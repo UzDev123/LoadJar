@@ -67,7 +67,7 @@ afterEvaluate{
                 from components.release
 
                 groupId = 'com.promore.mylibrary'
-                artifactId = 'logger2'
+                artifactId = 'log-preview-view'
                 version = '1.0'
 
 

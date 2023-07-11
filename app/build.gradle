@@ -54,7 +54,6 @@ dependencies {
 //
     implementation project(path: ':main-log')
 
-
     implementation 'androidx.core:core-ktx:1.10.1'
     implementation platform('androidx.compose:compose-bom:2022.10.00')
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
@@ -74,49 +73,3 @@ dependencies {
 
 
 
-
-
-//afterEvaluate {
-//    android.libraryVariants.each { variant ->
-//        publishing.publications.create(variant.name, MavenPublication)
-//                {
-//                    from components.findByName(variant.name)
-//
-//
-//
-//
-//                    artifact androidJavadocsJar
-//                    artifact androidSourceJar
-//
-//                    groupId 'com.promore.mylibrary'
-//                    artifactiId('logger2')
-//                    version '1.1.0'
-//                }
-//
-//    }
-//
-//}
-//
-//task androidJavadocs(type: Javadoc) {
-//    source = android.sourceSets.main.java.srcDirs
-//
-////    classpath += project.files(android.getBootClassPath().join(File.separator))
-////    classpath += project.files(android.getBootClassPath().join(File.separator))
-//    android.libraryVariants.all { variant ->
-//        owner.classpath += variant.javaCompileProvider.get().classpath
-//
-//    }
-//    options {
-//        memberLevel = JavadocMemberLevel.PROTECTED
-//    }
-//}
-//
-//task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
-//    archiveClassifier.set('javadoc')
-//    from androidJavadocs.destinationDir
-//}
-//
-//task androidSourceJar(type: Jar) {
-//    archiveClassifier.set('sources')
-//    from android.sourceSets.main.java.srcDirs
-//}
