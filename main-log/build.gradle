@@ -1,0 +1,22 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+//task deleteJar(type: Delete) {
+//    delete 'build/libs/main-log.jar'
+//}
+//
+//task createJar2(type: Copy) {
+//    from('build/intermediates/bundles/release/')
+//    into('build/libs/')
+//    include('classes.jar')
+//    rename('classes.jar', 'main-log.jar')
+//}
+//
+//createJar2.dependsOn(deleteJar, build)
